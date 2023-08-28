@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style2.css"/>
+  <link rel="stylesheet" href="./assets/css/card-style.css"/>
+  <title>Top Up Point Blank - DC Store</title>
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo.jpg">
+</head>
+<body class="d-flex flex-column min-vh-100">
+  <div class="box-shadow">
+    <h4>Point Blank</h4>
+    <span class="line"></span>
+    <div class="box-proses">
+      <img src="./assets/img/point_blank.jpg" alt="Point Blank">
+      <p class="proses">Top Up Point Blank<br>
+      <p class="proses2">Proses cepat</p>
+    </div>
+    <div class="box-step">
+      <ul>
+		<li>1. Masukkan <b>ID</b></li>
+        <li>2. PIlih <b>Nominal </b>PB Cash</li>
+        <li>3. PIlih <b>Metode pembayaran</b></li>
+        <li>4. Klik <b>Bayar Sekarang</b> & lakukan pembayaran</li>
+        <li>5. Diamond akan masuk otomatis.</li>
+      </ul>
+    </div>
+  </div>
+  
+  <br>
+  
+  <div class="box-shadow2">
+    <h5>1. ALAMAT EMAIL (OPSIONAL)</h5>
+    <form class="data-id">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label asu">Masukan Email</label>
+        <input type="email" class="form-control form-control-sm" placeholder="example@your.com" id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
+    </form>
+    <br>
+    
+    <h5>2. MASUKAN ID PENGGUNA</h5>
+    <form class="data-id">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label asu">Masukan ID Pengguna</label>
+        <input type="number" class="form-control form-control-sm" placeholder="12345678" id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
+    </form>
+  </div>
+  
+  <div class="box-shadow3">
+    <div class="wrapper-diamond">
+    <h5>3. PILIH NOMINAL</h5>
+      <div class="container">
+        <div class="row gx-2">
+          <div class="col-6">
+            <input type="checkbox" class="btn-check border" id="btn-check" autocomplete="off">
+            <label class="btn btn-secondary text-light pilih" onclick="tp1()">
+              <div id="selection1">
+                <p>1200 CASH</p>
+                <span>Rp. 11.500</span>
+              </div>
+            </label>
+          </div>
+          <div class="col-6">
+            <input type="checkbox" class="btn-check border" id="btn-check" autocomplete="off">
+            <label class="btn btn-secondary text-light pilih" onclick="tp2()">
+              <div id="selection1">
+                <p>2400 CASH</p>
+                <span>Rp. 22.500</span>
+              </div>
+            </label>
+          </div>
+          <div class="col-6">
+            <input type="checkbox" class="btn-check border" id="btn-check" autocomplete="off">
+            <label class="btn btn-secondary text-light pilih" onclick="tp3()">
+              <div id="selection1">
+                <p>6000 CASH</p>
+                <span>Rp. 50.500</span>
+              </div>
+            </label>
+          </div>
+          <div class="col-6">
+            <input type="checkbox" class="btn-check border" id="btn-check" autocomplete="off">
+            <label class="btn btn-secondary text-light pilih" onclick="tp4()">
+              <div id="selection1">
+                <p>12000 CASH</p>
+                <span>Rp. 97.500</span>
+              </div>
+            </label>
+          </div>
+          <div class="col-6">
+            <input type="checkbox" class="btn-check border" id="btn-check" autocomplete="off">
+            <label class="btn btn-secondary text-light pilih" onclick="tp5()">
+              <div id="selection1">
+                <p>36000 CASH</p>
+                <span>Rp. 290.500</span>
+              </div>
+            </label>
+          </div>
+          <div class="col-6">
+            <input type="checkbox" class="btn-check border" id="btn-check" autocomplete="off">
+            <label class="btn btn-secondary text-light pilih" onclick="tp6()">
+              <div id="selection1">
+                <p>60000 CASH</p>
+                <span>Rp. 485.500</span>
+              </div>
+            </label>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="box-shadow4" id="pembayaran">
+  	
+    <h5>4. PILIH METODE PEMBAYARAN</h5>
+    <p class="wallet">E-Wallet</p>
+    <div class="container">
+      <div class="row g-2">
+        <div class="col-12">
+          <input type="checkbox" class="btn-check " id="btn-check" autocomplete="off">
+            <label class="btn btn-secondary metode-payment1">
+                <div id="choose-payment1">
+                  <img src="./assets/icons/ShopeePay.png" alt="" class="img-payment1">
+                  <h5>ShopeePay</h5>
+                  <p class="wallet3">Rp.</p>
+                </div>
+            </label>
+        </div>
+        <div class="col-12">
+          <input type="checkbox" class="btn-check " id="btn-check" autocomplete="off">
+            <label class="btn btn-secondary metode-payment1">
+                <div id="choose-payment1">
+                  <img src="./assets/icons/Logo-BCA-PNG-1024x768.png" alt="" class="img-payment1">
+                  <h5>BCA</h5>
+                  <p class="wallet3">Rp.</p>
+                </div>
+            </label>
+        </div>
+        <div class="col-12">
+         <input type="checkbox" class="btn-check " id="btn-check" autocomplete="off">
+            <label class="btn btn-secondary metode-payment1">
+                <div id="choose-payment1">
+                  <img src="./assets/icons/qris.png" alt="" class="img-payment1">
+                    <h5>Qris All Pay</h5>
+                  <p class="wallet3">Rp.</p>
+                </div>
+            </label>
+         </div>
+       </div>
+     </div>
+  
+  <div class="box-shadow5" id="total">
+      <div class="mb-1 row mt-1">
+        <div class="col-sm-10 d-flex justify-content-center flex-column">
+      	<b class="payment">Subtotal:</b><p id="total1">Rp.</p>
+          <span class="acc">Saya telah membaca dan menyetujui <a class="tol">Ketentuan Layanan</a></span>
+          <a href="bayar.html">
+          <button type="button" style="border-radius: 15px;" class="btn btn-primary">Bayar Sekarang</button>
+          </a>
+        </div>
+      </div>
+    </div>
+   </div>
+ </div>
+ 
+<footer>
+    <div class="container-end" id="footer">
+      <div class="wrapper-end">
+        <small class="footertext">Copyright © 2023 <a href="https://www.danzzcoding.my.id" style="color: #00E0FF">Kivenn Markett</a>. All Rights Reserved.</small>
+        <br>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+	<script src="./assets/js/point_blank.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</html>
